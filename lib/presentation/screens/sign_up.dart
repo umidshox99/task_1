@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+class SignUp extends StatefulWidget {
+  SignUp({Key key}) : super(key: key);
+
+  @override
+  _SignUpState createState() => _SignUpState();
+}
+
+class _SignUpState extends State<SignUp> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Text(
+          "Umidjon",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+    );
+  }
+}
