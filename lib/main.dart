@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:task_1/presentation/screens/home.dart';
-import 'package:task_1/presentation/screens/sign_in.dart';
-import 'package:task_1/presentation/screens/sign_up.dart';
+import 'package:task_1/presentation/screens/about_screen.dart';
+import 'package:task_1/presentation/screens/home_screen.dart';
+import 'package:task_1/presentation/screens/sign_in_screen.dart';
+import 'package:task_1/presentation/screens/sign_up_screen.dart';
 import 'package:task_1/presentation/screens/slpash_screen.dart';
-import 'package:task_1/presentation/screens/verify_page.dart';
+import 'package:task_1/presentation/screens/verify_screen.dart';
+import 'package:task_1/utils/utils.dart';
 
 void main() => runApp(MaterialApp(
       initialRoute: '/',
@@ -13,8 +15,11 @@ void main() => runApp(MaterialApp(
         '/home': (context) => Home(),
         '/sign_in': (context) => SignIn(),
         '/sign_up': (context) => SignUp(),
+        '/about': (context) => AboutScreen(),
       },
       theme: ThemeData(
-          primaryColor: Colors.purpleAccent, accentColor: Colors.purpleAccent),
+          primaryColor: primaryColor,
+          accentColor: accentColor,
+          brightness: Brightness.light),
       debugShowCheckedModeBanner: false,
     ));

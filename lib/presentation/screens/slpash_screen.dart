@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:task_1/presentation/screens/sign_up.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -13,14 +12,8 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Timer(
-        Duration(seconds: 2),
-        () => {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (BuildContext context) => SignUp()))
-            });
+    Timer(Duration(seconds: 2),
+        () => {Navigator.pushReplacementNamed(context, "/about")});
   }
 
   @override
